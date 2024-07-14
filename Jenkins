@@ -11,9 +11,9 @@ pipeline {
     }
     
     stages {
-                stage('git pull') {
+        stage('git pull') {
             steps {
-                git branch: 'main', url: 'https://github.com/epic-croswords/fullstack-bank-proj.git'
+                git branch: 'main', url: 'https://github.com/yormengh/fullstack-bank-app-main.git'
             }
         }
         stage('Owasp scan') {
