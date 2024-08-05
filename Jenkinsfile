@@ -71,7 +71,7 @@ pipeline {
             }
         }
 
-        stage("TRIVY"){
+        stage("TRIVY SCAN"){
             steps{
                 sh "trivy image yormengh/fullstackbank_backend:latest > trivyimage.txt"
                 sh "trivy image yormengh/fullstackbank_frontend:latest > trivyimage.txt"
